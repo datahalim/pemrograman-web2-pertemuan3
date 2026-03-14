@@ -1,13 +1,38 @@
+<?php
 
----
+$ball = "purple";
 
-### Latihan 2 – Perhitungan Diskon
-Program PHP untuk menghitung **diskon pembelian** berdasarkan total belanja menggunakan struktur `if...else`.
+$redbox = "";
+$yellowbox = "";
+$bluebox = "";
+$greenbox = "";
+$purplebox = "";
+$colorlessbox = "";
 
-Ketentuan diskon:
+if ($ball == "red") {
+    $redbox = $ball;
+}
+elseif ($ball == "yellow") {
+    $yellowbox = $ball;
+}
+elseif ($ball == "blue") {
+    $bluebox = $ball;
+}
+elseif ($ball == "green") {
+    $greenbox = $ball;
+}
+elseif ($ball == "purple") {
+    $purplebox = $ball;
+}
+else {
+    $colorlessbox = $ball;
+}
 
-- ≥ 200000 → diskon 10%
-- ≥ 100000 → diskon 5%
-- < 100000 → diskon 1%
+echo "red box : $redbox <br>";
+echo "yellow box : $yellowbox <br>";
+echo "blue box : $bluebox <br>";
+echo "green box : $greenbox <br>";
+echo "purple box : $purplebox <br>";
+echo "colorless box : $colorlessbox <br>";
 
-File:
+?>
